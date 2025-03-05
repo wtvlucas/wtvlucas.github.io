@@ -5,10 +5,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding-top: 36px;
-  overflow: hidden;
+  overflow:hidden;
+
+  
 }
 
-
+.content {
+  overflow-y:scroll;
+}
 
 header {
   position: fixed;
@@ -22,6 +26,7 @@ header {
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;   
 }
 
 
@@ -157,3 +162,7 @@ header {
   font-size: 1rem;
   color: #ccc;
 }
+
+
+/* scroll bar */
+
