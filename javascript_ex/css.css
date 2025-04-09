@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.lamp img {
+    max-height: 60vh; 
+    width: auto; 
+    position: relative;
+}
+
+.switchButton {
+    border-radius: 20px;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.switchButton button {
+    font-size: 2vh;
+    border-radius: 20px;
+    height: 7vh;
+    width: 20vh;
+}
