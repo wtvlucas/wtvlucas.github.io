@@ -44,16 +44,20 @@ header {
 
 .nav-links {
     display: flex;
-    gap: 30px; 
-    list-style: none; 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    background-color: transparent; 
-    padding: 0; 
-    z-index: 1000; 
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+    background-color: transparent; /* Remove qualquer fundo */
+    padding: 0; /* Remove padding extra */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
 }
+
+
 
 .nav-links li {
     display: inline;
@@ -396,6 +400,11 @@ details[open] summary::after {
         background-color: rgba(0, 0, 0, 0.9);
         padding-top: 30%;
         z-index: 1000;
+
+
+       
+        transform: none; 
+
     }
 
     .nav-links.active {
@@ -450,7 +459,7 @@ details[open] summary::after {
         font-size: 20px;
     }
 
-    .gridPurpp {
+   .gridPurpp {
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: auto;
         gap: 10px;
