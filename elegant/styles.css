@@ -1,50 +1,58 @@
 @font-face {
     font-family: lufga;
     src: url(assets/LufgaMedium.ttf);
-  }
+}
 
 body {
-
-    background-color: black;
     font-family: lufga;
-
+    background-color: black;
+    color: white;
+    margin: 0;
 }
 
-main {
-    margin: auto;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-/* header */
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
     padding: 20px;
     background-color: black;
+    margin: auto;
 }
 
 .logo {
     margin-right: auto;
 }
 
-.logo img{
+.logo img {
     width: 20%;
-    height: 20%;
- 
- 
+    height: auto;
 }
 
+.menu-icon {
+    display: none;
+}
 
 .nav-links {
-    font-size: 14px;
-    list-style: none;
     display: flex;
-    gap: 30px;
-    align-items: center;
-    position: absolute; /* Use absolute positioning */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
+    gap: 30px; 
+    list-style: none; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: transparent; 
+    padding: 0; 
+    z-index: 1000; 
 }
 
 .nav-links li {
@@ -54,7 +62,10 @@ main {
 .nav-links a {
     text-decoration: none;
     color: grey;
-    font-size: 13px;
+    font-size: 14px;
+    padding: 15px 20px;
+    text-align: center;
+    word-wrap: break-word;
     transition: color 0.3s ease;
 }
 
@@ -62,29 +73,28 @@ main {
     color: white;
 }
 
-.divider {
-    color: grey;
-    font-size: 16px;    
+.nav-links.active {
+    display: flex;
 }
 
 .cart {
-    margin-left: auto; /* Pushes the cart to the far right */
+    font-size: 25px;
+    color: grey;
+    margin-left: auto;
 }
 
-
-
-/* body */
-
-/* main */
+main {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
 
 .firstContainer {
     position: relative;
     text-align: center;
     color: white;
-  }
-
-/* title */
-
+}
 
 .main-title {
     position: absolute;
@@ -98,55 +108,42 @@ main {
     z-index: 10;
 }
 
-
-/* images */
 .imagesfirst {
     padding-top: 20%;
     display: flex;
     justify-content: center;
-    gap: 0; 
+    gap: 0;
     margin-left: 100px;
     margin-right: 100px;
 }
 
 .imgfirstContainer {
-
-    
-    position: relative; 
+    position: relative;
     width: 40%;
     height: 40%;
-    
     aspect-ratio: 1;
-    
 }
 
 .imgfirstContainer:nth-child(3) {
-
     background-color: rgb(215, 157, 218);
-
-    
 }
 
-.imgfirstContainer a{
+.imgfirstContainer a {
     text-decoration: none;
     color: white;
     font-size: 30px;
     position: relative;
     top: 50%;
-
 }
-
-
 
 .imgfirstContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
     border-radius: inherit;
 }
-
 
 .imgfirstContainer::before {
     content: "";
@@ -155,11 +152,10 @@ main {
     left: -10px;
     width: calc(100% + 20px);
     height: calc(100% + 20px);
-    border: 20px solid rgba(62, 62, 62, 0.4); 
+    border: 20px solid rgba(62, 62, 62, 0.4);
     border-radius: inherit;
-    z-index: -1; 
+    z-index: -1;
 }
-
 
 .imgfirstContainer:nth-of-type(odd) {
     border-radius: 50%;
@@ -168,10 +164,6 @@ main {
 .imgfirstContainer:nth-of-type(even) {
     border-radius: 50px;
 }
-
-
-
-/* new collection containers */
 
 .newCollectionContainer {
     padding-top: 30px;
@@ -193,45 +185,41 @@ main {
     align-items: center;
 }
 
-.newCollectionContainers p{
+.newCollectionContainers p {
     color: rgb(80, 80, 80);
     font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.newCollectionContainers a{
+.newCollectionContainers a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-
 .mertraAboutUs {
     text-align: center;
     justify-content: center;
-    margin:20%;
+    margin: 20%;
 }
 
-.mertraAboutUs p{
+.mertraAboutUs p {
     font-size: 30px;
     color: grey;
-    
 }
 
 .mertraAboutUsHighlight {
     color: rgb(215, 157, 218);
 }
 
-
 .streamsText {
-    
     text-align: center;
 }
 
-.streamsText p{
+.streamsText p {
     font-size: 40px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -239,38 +227,28 @@ main {
 }
 
 .streamsImagesContainer {
-    padding-top: 100px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-
-.imagesStreams img{
+.imagesStreams img {
     max-width: 100%;
-
     height: 250px;
-
-
     margin: 0 auto;
-
-    
-
     display: block;
-
-
 }
 
-
 .gridText {
-    padding-top: 40px;
+    padding-top: 20%;
     text-align: center;
     font-size: 40px;
     color: white;
     font-weight: bold;
-  }
-  
-  .gridPurpp {
+}
+
+.gridPurpp {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 200px);
@@ -278,55 +256,62 @@ main {
     padding: 40px;
     max-width: 1200px;
     margin: auto;
-  }
-  
-  .purppImage {
-    background-image: url('assets/mertra/mertraGrid.png'); /* substitui pela tua imagem */
+}
+
+.purppImage {
+    background-image: url('assets/mertra/mertraGrid.png');
     background-size: 400% 200%;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-  }
-  
-  .circle {
+}
+
+.circle {
     border-radius: 50%;
-  }
-  
-  .rounded {
+}
+
+.rounded {
     border-radius: 20px;
-  }
-  
-  .textBlock {
-   
+}
+
+.textBlock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     color: white;
-  }
-  
-  .textBlock h2 {
-    font-size: 1.5rem;
+}
+
+.textBlock h2 {
+    font-size: 20px;
     margin: 0;
-  }
-  
-  .textBlock a {
+}
+
+.textBlock a {
     margin-top: 10px;
     color: white;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 20px;
     display: inline-flex;
     align-items: center;
     gap: 5px;
     opacity: 0.8;
     transition: opacity 0.2s;
-  }
-  
-  .textBlock a:hover {
-    opacity: 1;
-  }
+}
 
-  
+.textBlock a:hover {
+    opacity: 1;
+}
+
+.FAQText {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    padding-top: 20%;
+    padding-bottom: 3%;
+}
+
 details {
     width: 50%;
     margin: auto;
@@ -349,8 +334,6 @@ summary {
     position: relative;
 }
 
-
-
 summary::after {
     content: "˅";
     font-weight: bolder;
@@ -359,10 +342,9 @@ summary::after {
     transition: transform 0.3s ease;
 }
 
-  details[open] summary::after {
+details[open] summary::after {
     transform: rotate(180deg);
-    
-  }
+}
 
 .FAQContainer p {
     margin-top: 10px;
@@ -370,27 +352,116 @@ summary::after {
     line-height: 1.5;
     font-family: lufga;
     font-size: 15px;
-  }
+}
 
-/* 
+.divider {
+    color: grey;
+    font-size: 14px;
+}
 
 @media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
     .navbar {
-        font-size: x-small;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu-icon {
+        font-size: 24px;
+        color: grey;
+        cursor: pointer;
+        z-index: 1100;
+        display: initial;
     }
 
     .nav-links {
-        gap: 5px;
-        padding: 0;
-        text-align: center;
-        align-items: right;
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding-top: 30%;
+        z-index: 1000;
     }
 
-    .nav-links li {
-         flex-direction: column;
-        block-size: fit-content;
+    .nav-links.active {
+        display: flex;
     }
-} */
+
+    .nav-links a {
+        font-size: 18px;
+        padding: 15px;
+        color: grey;
+    }
+
+    .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .menu-icon.open {
+        content: "X";
+    }
+
+    .imagesfirst {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .imgfirstContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .newCollectionContainer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .newCollectionContainers {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .streamsImagesContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mertraAboutUs p {
+        font-size: 20px;
+    }
+
+    .gridPurpp {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .purppImage {
+        height: 150px;
+    }
+
+    details {
+        width: 100%;
+    }
+}

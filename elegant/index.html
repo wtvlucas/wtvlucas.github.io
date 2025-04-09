@@ -6,7 +6,7 @@
     <title>Navbar Responsiva</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-   
+    <script src="script.js"></script>
 </head>
 
 
@@ -15,27 +15,33 @@
 
 <body>
     <header>
+
+
+        
         <nav class="navbar">
             <div class="logo"><img src="assets/mertra/mertra.png" alt="mertra"></div>
+
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <span class="divider">|</span>
-                <li><a href="#">New Collection</a></li>
+                <li><a href="#newCollection">New Collection</a></li>
                 <span class="divider">|</span>
-                <li><a href="#">Catalog</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
                 <span class="divider">|</span>
-                <li><a href="#">Delivery</a></li>
+                <li><a href="#Social">Social</a></li>
                 <span class="divider">|</span>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#faq">Faq</a></li>
             </ul>
 
             
             <i class="glyphicon glyphicon-shopping-cart cart" style="font-size:25px;color:grey;"></i>
-            <!-- <div class="menu-toggle" onclick="toggleMenu()">☰</div> -->
+
         </nav>
     </header>
 
     <main>
+        <div id="home"></div>
         <div class="firstContainer">
             <p><h1 class="main-title">Mertra</h1></p>
 
@@ -49,7 +55,7 @@
 
         </div>
 
-
+        <div id="newCollection"></div>
         <div class="newCollectionContainer">
             <div class="newCollectionContainers"><p>New collection dropping this april with lot of new and creative stuff in it!</p></div>
             <div class="newCollectionContainers"><p>Every piece is unique and creative, elevating the game of the streetwear and fashion.</p></div>
@@ -57,7 +63,7 @@
         </div>
 
 
-
+        <div id="aboutUs"></div>
         <div class="mertraAboutUs">
             <p><span class="mertraAboutUsHighlight">Mertra</span> is an <span class="mertraAboutUsHighlight">emerging brand in the fashion scene</span>, known for blending <span class="mertraAboutUsHighlight">bold streetwear elements</span> with a <span class="mertraAboutUsHighlight">modern and minimalist aesthetic</span>. The brand offers a wide range of products, including hoodies, jackets, track pants, and accessories, standing out for its <span class="mertraAboutUsHighlight">high-quality materials</span> and <span class="mertraAboutUsHighlight">innovative designs</span>.</p>
 
@@ -66,6 +72,7 @@
         </div>
 
 
+        <div id="Social"></div>
         <div class="streamsText"><p>Our social media</p></div>
 
         <div class="streamsImagesContainer">
@@ -81,15 +88,15 @@
 
         <div class="gridPurpp">
           <div class="purppImage circle" style="background-position: 0% 0%;"></div>
-          <div class="purppImage rounded" style="background-position: 35% 0%;"></div>
-          <div class="purppImage circle" style="background-position: 60% 0%;"></div>
+          <div class="purppImage rounded" style="background-position: 33% 0%;"></div>
+          <div class="purppImage circle" style="background-position: 66% 0%;"></div>
           <div class="purppImage rounded textBlock" style="background-position: 100% 0%;">
-            <h2>Fall Sale<br>50% Off</h2>
-            <a href="#">Shop Now ↗</a>
+            <h2>ON SALE<br>50% Off</h2>
+            <a href="https://mertra.com/">Shop Now ↗</a>
           </div>
           <div class="purppImage rounded" style="background-position: 0% 100%;"></div>
-          <div class="purppImage circle" style="background-position: 35% 100%;"></div>
-          <div class="purppImage rounded" style="background-position: 60% 100%;"></div>
+          <div class="purppImage circle" style="background-position: 33% 100%;"></div>
+          <div class="purppImage rounded" style="background-position: 66% 100%;"></div>
           <div class="purppImage circle" style="background-position: 100% 100%;"></div>
         </div>
         
@@ -98,39 +105,39 @@
 
 
         
-        <div class="streamsText"><p>FAQ</p></div>
+        <div id="faq"></div>
 
         <div class="FAQContainer">
 
-            <details>
-                <summary>Onde posso ouvir a musica?</summary>
-                <p>Nos fones.</p>
-            </details>
-            
-            <details>
-                <summary>Que dia é hoje?</summary>
-                <p>Não sei.</p>
-            </details>
-            
-            <details>
-                <summary>Cristiano?</summary>
-                <p>Ronaldo</p>
-            </details>
-            
-            <details>
-                <summary>Elefante</summary>
-                <p>Peso pesado</p>
-            </details>
+
+            <div class="FAQText">FAQ</div>
+
 
             <details>
-                <summary>Fumo</summary>
-                <p>muita e*va</p>
+                <summary>What is MERTRA?</summary>
+                <p>MERTRA is a clothing brand offering a range of apparel including hoodies, tracksuit pants, and jeans, with a focus on innovative design and quality.</p>
             </details>
             
             <details>
-                <summary>Eu 'tou muito forte</summary>
-                <p>bebo muito lean</p>
+                <summary>Where can I buy MERTRA products?</summary>
+                <p>You can purchase MERTRA products through the official website: <a href="https://mertra.com/">mertra.com</a>.</p>
             </details>
+            
+            <details>
+                <summary>What are the latest MERTRA releases?</summary>
+                <p>Some of the most recent drops include the "A Mertra Heat Reactive Puffers" and the "A Mertra Tracksuit Blue & Sky Blue". You can explore the full collection on our website.</p>
+            </details>
+            
+            <details>
+                <summary>Does MERTRA offer international shipping?</summary>
+                <p>Yes, MERTRA ships to multiple countries. Please check the shipping options during checkout for more information.</p>
+            </details>
+            
+            <details>
+                <summary>How can I contact MERTRA customer support?</summary>
+                <p>If you have any questions or need assistance, feel free to reach out through the contact form available on the "Contact" section of our website.</p>
+            </details>
+            
 
             
             
