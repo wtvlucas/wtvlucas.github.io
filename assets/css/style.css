@@ -449,6 +449,8 @@
      line-height: 1.5;
      margin-bottom: 15px;
      font-size: 12px;
+     white-space: pre-line;
+
 }
  .modal-tech {
      color: #000080;

@@ -37,6 +37,7 @@
                      <div class="nav-category">
                         <button class="nav-link nav-subitem category-item" data-section="projects" data-category="games">GAMES</button>
                         <div class="nav-projects">
+                           <button class="nav-link nav-subitem project-item" data-section="projects" data-project="disasterpiece">Disasterpiece</button>
                            <button class="nav-link nav-subitem project-item" data-section="projects" data-project="kindergarten-hell">Kindergarten Hell</button>
                            <button class="nav-link nav-subitem project-item" data-section="projects" data-project="holy-temptation">Holy Temptation</button>
                            <button class="nav-link nav-subitem project-item" data-section="projects" data-project="lillys">Lillys Thrift Store</button>
@@ -94,16 +95,16 @@
                      </div>
                      <div class="about-content">
                         <p>
-                           I’m a passionate game developer with a strong focus on programming and a deep appreciation for game art. I began coding at the age of 15, starting with simple HTML and CSS out of pure curiosity and a desire to learn. Since then, I’ve expanded my skill set to include scripting in Lua for FiveM, as well as developing games in Godot using GDScript and in Unity with C#. Currently, I’m diving into Unreal Engine, learning both Blueprints and C++.
+                           I’m a Game Developer with a heavy focus on programming, though I’ve always had a soft spot for the artistic side of things. I started coding at 15 just out of curiosity, messing around with HTML and CSS. That eventually evolved into scripting for FiveM with Lua, and later, making full games in Godot and Unity. Right now I’m tackling Unreal Engine and learning both Blueprints and C++.
                         </p>
                         <p>
-                           My main strength lies in game programming—whether it’s building core mechanics, optimizing performance, or crafting gameplay systems—but I also have a creative side. I’ve been passionate about graffiti since I was young, and that love for visual expression continues to inspire the artistic aspects of my work.
+                           Programming is definitely my main thing since I love building mechanics and optimizing code, but I’m not just about the logic. I’ve loved graffiti since I was a kid and I’m also super into fashion. I put a lot of thought into curating my own distinct style because I think having that visual sensitivity actually helps build a better personality.
                         </p>
                         <p>
-                           I'm 20 years old and currently in my second year of the Videogames and Multimedia Applications (VAM) program at Universidade Lusófona. Alongside my studies, I’m currently working at a company that supplies refurbished electronic devices, where I’m responsible for handling and managing RMAs (Return Merchandise Authorizations).
+                           I’m 20 and currently in my third year of the VAM course at Universidade Lusófona. It’s honestly been a huge challenge balancing my degree with my job at a refurbished tech company. I’m the sole person responsible for managing RMAs there which basically means I spend a lot of time fixing computers and diagnosing hardware issues. It’s crazy how much that mirrors coding since trying to track down a hardware fault uses the exact same logic as debugging a game. I even write mini scripts sometimes to optimize our processes there. It really trains my brain to hunt for errors and find creative solutions. The pressure is real though. I can't drop the ball at work because the department depends on me, but I can't let my grades slip either.
                         </p>
                         <p>
-                           My goal is to create games that are not only technically solid but also capable of delivering meaningful and memorable experiences to players.
+                           At the end of the day, I just want to build games that feel good to play and actually leave a mark on the player.
                         </p>
                      </div>
                   </div>
@@ -116,6 +117,15 @@
                      </div>
                      <h2 class="projects-category-title" data-category="games">GAMES</h2>
                      <div class="projects-grid" data-category="games">
+                        <div class="project-category" onclick="showProjectDetails('disasterpiece')">
+                           <div class="category-header">
+                              <div class="category-icon"> <img src="./assets/projects/cofre.png" alt="Disasterpiece Icon"></div>
+                              <div>
+                                 <div class="category-title">Disasterpiece</div>
+                                 <div class="category-subtitle">PHYSICS BASED 3D STEALTH GAME</div>
+                              </div>
+                           </div>
+                        </div>
                         <div class="project-category" onclick="showProjectDetails('kindergarten-hell')">
                            <div class="category-header">
                               <div class="category-icon"> <img src="./assets/projects/hell_logo.png" alt="Kindergarten Hell Icon"></div>
@@ -130,7 +140,7 @@
                               <div class="category-icon"> <img src="./assets/projects/holy_logo.png" alt="Holy Temptation Icon"></div>
                               <div>
                                  <div class="category-title">HOLY TEMPTATION</div>
-                                 <div class="category-subtitle">2D SHOOTER</div>
+                                 <div class="category-subtitle">2D SHOOTER GAMER</div>
                               </div>
                            </div>
                         </div>
