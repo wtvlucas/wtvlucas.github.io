@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disasterpiece | The Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-content">LOADING HEIST...</div>
+    </div>
+
+    <div id="flashlight"></div>
+
+    <nav class="poly-nav fade-in-down">
+        <div class="logo">DISASTERPIECE</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#trailer">Trailer</a></li>
+            <li><a href="#heist">The Heist</a></li>
+            <li><a href="#team">The Crew</a></li>
+           <!-- <li><a href="#contact" class="btn-3d">Play Demo</a></li> -->
+        </ul>
+        <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-container fade-in">
+            <span class="badge-3d">COMING 2026</span>
+            
+            <img src="img/logo.png" alt="Disasterpiece Logo" class="hero-logo floating-3d">
+
+            <h1 class="title-3d">STEAL. BREAK. <span class="highlight-text">ESCAPE.</span></h1>
+            
+            <p>Two clumsy thieves, zero coordination. The most chaotic stealth game of the year.</p>
+            <div class="hero-buttons">
+                <a href="#trailer" class="btn-3d primary icon-btn">Watch Trailer <i class="fas fa-play"></i></a>
+                <a href="https://github.com" target="_blank" class="btn-3d secondary icon-btn">GitHub Repo <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        
+        <div class="poly-bg-shape shape-1"></div>
+        <div class="poly-bg-shape shape-2"></div>
+    </header>
+
+    <section id="trailer">
+        <div class="section-header fade-in">
+            <h2>THE EVIDENCE</h2>
+            <div class="line-3d"></div>
+        </div>
+        
+        <div class="video-container fade-in">
+            <div class="video-border-3d">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FwKEWiaz4CU?si=-cERfEmvXd0ctlpb" title="Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="rec-tag">REC ●</div>
+        </div>
+    </section>
+
+    <section id="heist">
+        <div class="section-header fade-in">
+            <h2>THE HEIST</h2>
+            <p>If it's not nailed down, it's ours.</p>
+        </div>
+        
+        <div class="heist-grid">
+            <div class="heist-card-3d fade-in">
+                <div class="card-face">
+                    <i class="fas fa-running"></i>
+                    <h3>Clumsy Stealth</h3>
+                    <p>Try to be sneaky while knocking over every vase in the room.</p>
+                </div>
+            </div>
+            <div class="heist-card-3d fade-in" style="transition-delay: 0.1s;">
+                <div class="card-face">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Physics Chaos</h3>
+                    <p>Everything reacts. Throw boxes, break windows, trip over rugs.</p>
+                </div>
+            </div>
+            <div class="heist-card-3d fade-in" style="transition-delay: 0.2s;">
+                <div class="card-face">
+                    <i class="fas fa-hand-holding-dollar"></i>
+                    <h3>Loot Everything</h3>
+                    <p>Grab anything you see. If it fits in the van, it's money.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="section-header fade-in">
+            <h2>THE CREW</h2>
+            <p>Meet the masterminds behind the chaos.</p>
+        </div>
+
+        <div class="carousel-container fade-in">
+            <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            
+            <div class="carousel-track">
+                <div class="team-card-3d">
+                    <div class="card-content">
+                        <div class="poly-img-container"><img src="https://placehold.co/100x100/2a2a4e/FFF?text=Ric" alt="Dev"></div>
+                        <h3>Ricardo</h3>
+                        <span class="role">Lead Programmer</span>
+                        <div class="socials">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-3d">
+                    <div class="card-content">
+                        <div class="poly-img-container"><img src="https://placehold.co/100x100/2a2a4e/FFF?text=Rafa" alt="Dev"></div>
+                        <h3>Rafael</h3>
+                        <span class="role">3D Artist</span>
+                        <div class="socials">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-3d">
+                    <div class="card-content">
+                        <div class="poly-img-container"><img src="https://placehold.co/100x100/2a2a4e/FFF?text=Tiago" alt="Dev"></div>
+                        <h3>Tiago</h3>
+                        <span class="role">Level Designer</span>
+                        <div class="socials">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-3d">
+                    <div class="card-content">
+                        <div class="poly-img-container"><img src="https://placehold.co/100x100/2a2a4e/FFF?text=Rodi" alt="Dev"></div>
+                        <h3>Rodrigo</h3>
+                        <span class="role">Sound Engineer <br>Game Designer</br></span>
+                        <div class="socials">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-3d">
+                    <div class="card-content">
+                        <div class="poly-img-container"><img src="https://placehold.co/100x100/2a2a4e/FFF?text=Lucas" alt="Dev"></div>
+                        <h3>Lucas</h3>
+                        <span class="role">2D Artist<br>UI Programmer</br></span>
+                        <div class="socials">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>DISASTERPIECE</h3>
+                <p>University Project 2026</p>
+                <div class="tech-stack">
+                    <span class="pill-3d">Unreal Engine</span>
+                    <span class="pill-3d">Blender</span>
+                    <span class="pill-3d">Blueprints</span>
+                </div>
+
+
+            </div>
+
+            
+            <img src="img/VAM.png" alt="VamLogo" class="vam-logo floating-3d">
+            
+
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <a href="mailto:contact@disasterpiece.game" class="link-3d">contact@disasterpiece.game</a>
+                <div class="footer-socials">
+                    <a href="#" class="icon-3d"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon-3d"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon-3d"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Disasterpiece Team. Just don't get caught.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
