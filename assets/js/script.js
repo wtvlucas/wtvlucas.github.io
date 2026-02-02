@@ -41,11 +41,11 @@ const projectData = {
         title: "Disasterpiece",
         description: "  Disasterpiece is hands down the biggest project I’ve grinded on so far. It’s a chaotic 3D co-op stealth game where two clumsy thieves try to secure the bag without tripping over their own feet. It’s still a WIP with a lot of features to ship, but I’m really hyped about the core loop we’ve built. \n  I wore a lot of hats for this one. I mained Concept Art and UI Programming, but I also handled a huge chunk of the general gameplay code. This allowed the Main Programmer to focus entirely on the heavy lifting—specifically the complex physics engine—while I handled the rest of the game logic. \n  The real boss fight, though, was version control. Since we were both coding in parallel on different parts of the engine, we had to level up our Git skills fast. Dealing with branches and avoiding merge conflicts wasn't something we were used to, but we figured it out and optimized our workflow to keep the repo clean.",
         tech: "Unreal Engine, Blueprints, C++, Illustrator, Photoshop",
-        video: "./assets/videos/Disasterpiece.mp4",
+        
+        youtubeId: "FwKEWiaz4CU",
         playName: "kindergarten.exe",
         links: {
-           // play: "https://wtvlucas.github.io//",
-           // github: "https://github.com/wtvlucas/"
+           website: "https://wtvlucas.github.io/disasterpiece/"
         }
     },
     'kindergarten-hell': {
@@ -108,7 +108,26 @@ function showProjectDetails(projectId) {
 
     const projectImageElement = document.getElementById('project-image');
 
-    if (project.video) {
+    if (project.youtubeId) {
+        // Handle YouTube video
+        let iframeElement = document.getElementById('project-youtube');
+        if (!iframeElement) {
+            iframeElement = document.createElement('iframe');
+            iframeElement.id = 'project-youtube';
+            iframeElement.className = 'project-image';
+            iframeElement.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+            iframeElement.allowFullscreen = true;
+            iframeElement.frameborder = 0;
+            projectImageElement.parentNode.insertBefore(iframeElement, projectImageElement);
+        }
+        iframeElement.src = `https://www.youtube.com/embed/${project.youtubeId}`;
+        iframeElement.style.display = 'block';
+        projectImageElement.style.display = 'none';
+        const videoElement = document.getElementById('project-video');
+        if (videoElement) {
+            videoElement.style.display = 'none';
+        }
+    } else if (project.video) {
 
         let videoElement = document.getElementById('project-video');
         if (!videoElement) {
@@ -124,6 +143,10 @@ function showProjectDetails(projectId) {
         videoElement.src = project.video;
         videoElement.style.display = 'block';
         projectImageElement.style.display = 'none';
+        const iframeElement = document.getElementById('project-youtube');
+        if (iframeElement) {
+            iframeElement.style.display = 'none';
+        }
     } else {
 
         projectImageElement.src = project.image;
@@ -131,6 +154,10 @@ function showProjectDetails(projectId) {
         const videoElement = document.getElementById('project-video');
         if (videoElement) {
             videoElement.style.display = 'none';
+        }
+        const iframeElement = document.getElementById('project-youtube');
+        if (iframeElement) {
+            iframeElement.style.display = 'none';
         }
     }
     const linksContainer = document.getElementById('project-links');
