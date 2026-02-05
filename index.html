@@ -21,7 +21,7 @@
          <div class="container">
             <nav class="sidebar">
                <div class="profile">
-                  <h1>Lucas Lima</h1>
+                  <h1>Lucas Lima</h1>  
                   <div class="title">Game Developer</div>
                   <div class="showcase">'26</div>
                </div>
@@ -39,11 +39,12 @@
                         <div class="nav-projects">
                            <button class="nav-link nav-subitem project-item" data-section="projects" data-project="disasterpiece">Disasterpiece</button>
                            <button class="nav-link nav-subitem project-item" data-section="projects" data-project="kindergarten-hell">Kindergarten Hell</button>
-                           <button class="nav-link nav-subitem project-item" data-section="projects" data-project="holy-temptation">Holy Temptation</button>
+                           
                            <button class="nav-link nav-subitem project-item" data-section="projects" data-project="lillys">Lillys Thrift Store</button>
                         </div>
                         <button class="nav-link nav-subitem category-item" data-section="projects" data-category="other">OTHER</button>
                         <div class="nav-projects">
+                           <button class="nav-link nav-subitem project-item" data-section="projects" data-project="holy-temptation">Holy Temptation</button>
                            <button class="nav-link nav-subitem project-item" data-section="projects" data-project="3d-room">3d Low Polly Room</button>
                            <button class="nav-link nav-subitem project-item" data-section="projects" data-project="3d-animations">3D Model & Animations</button>
                         </div>
@@ -57,8 +58,8 @@
                      <h1 class="minimal-title">Lucas Lima</h1>
                      <h2 class="minimal-subtitle">Game Developer</h2>
                      <nav class="minimal-nav">
-                        <a href="#" class="nav-link" data-section="about">ABOUT</a>
-                        <a href="#" class="nav-link" data-section="projects">PROJECTS</a>
+                        <button class="nav-link" data-section="about">ABOUT</button>
+                        <button class="nav-link" data-section="projects">PROJECTS</button>
                      </nav>
                   </div>
                </section>
@@ -117,7 +118,7 @@
                      </div>
                      <h2 class="projects-category-title" data-category="games">GAMES</h2>
                      <div class="projects-grid" data-category="games">
-                        <div class="project-category" onclick="showProjectDetails('disasterpiece')">
+                        <div class="project-category" onclick="window.location.hash='disasterpiece'; showProjectDetails('disasterpiece')">
                            <div class="category-header">
                               <div class="category-icon"> <img src="./assets/projects/cofre.png" alt="Disasterpiece Icon"></div>
                               <div>
@@ -126,7 +127,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="project-category" onclick="showProjectDetails('kindergarten-hell')">
+                        <div class="project-category" onclick="window.location.hash='kindergarten-hell'; showProjectDetails('kindergarten-hell')">
                            <div class="category-header">
                               <div class="category-icon"> <img src="./assets/projects/hell_logo.png" alt="Kindergarten Hell Icon"></div>
                               <div>
@@ -135,16 +136,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="project-category" onclick="showProjectDetails('holy-temptation')">
-                           <div class="category-header">
-                              <div class="category-icon"> <img src="./assets/projects/holy_logo.png" alt="Holy Temptation Icon"></div>
-                              <div>
-                                 <div class="category-title">HOLY TEMPTATION</div>
-                                 <div class="category-subtitle">2D SHOOTER GAMER</div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="project-category" onclick="showProjectDetails('lillys')">
+                        
+                        <div class="project-category" onclick="window.location.hash='lillys'; showProjectDetails('lillys')">
                            <div class="category-header">
                               <div class="category-icon"> <img src="./assets/projects/Lillys.png" alt="Lillys"></div>
                               <div>
@@ -156,7 +149,16 @@
                      </div>
                      <h2 class="projects-category-title" data-category="other">OTHER PROJECTS</h2>
                      <div class="projects-grid" data-category="other">
-                        <div class="project-category" onclick="showProjectDetails('3d-room')">
+                        <div class="project-category" onclick="window.location.hash='holy-temptation'; showProjectDetails('holy-temptation')">
+                           <div class="category-header">
+                              <div class="category-icon"> <img src="./assets/projects/holy_logo.png" alt="Holy Temptation Icon"></div>
+                              <div>
+                                 <div class="category-title">HOLY TEMPTATION</div>
+                                 <div class="category-subtitle">2D SHOOTER GAMER</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project-category" onclick="window.location.hash='3d-room'; showProjectDetails('3d-room')">
                            <div class="category-header">
                               <div class="category-icon"><img src="./assets/images/LowPollyRoomNoBg.png" alt="3d Room"></div>
                               <div>
@@ -165,7 +167,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="project-category" onclick="showProjectDetails('3d-animations')">
+                        <div class="project-category" onclick="window.location.hash='3d-animations'; showProjectDetails('3d-animations')">
                            <div class="category-header">
                               <div class="category-icon"><img src="./assets/images/meModel.png" alt="3d Model & Animations"></div>
                               <div>
@@ -201,7 +203,6 @@
                         </div>
                      </div>
                   </div>
-         </div>
          </section>
          </main>
       </div>
@@ -221,21 +222,6 @@
       <div class="status-bar">
          <span class="status-text">Lucas Lima © All rights reserved | 2026</span>
       </div>
-      </div>
-      <div id="projectModal" class="modal">
-         <div class="modal-window">
-            <div class="modal-title-bar">
-               <span id="modalWindowTitle">Detalhes do Projeto</span>
-               <div class="window-controls">
-                  <div class="control-btn" onclick="closeModal()">×</div>
-               </div>
-            </div>
-            <div class="modal-content">
-               <h2 id="modalTitle" class="modal-project-title"></h2>
-               <p id="modalDescription" class="modal-description"></p>
-               <p class="modal-tech"><strong>Technology:</strong> <span id="modalTech"></span></p>
-            </div>
-         </div>
       </div>
       <div id="emailPopup" class="modal">
          <div class="modal-window">
