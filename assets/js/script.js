@@ -37,7 +37,7 @@
         tech: "Unreal Engine, Blueprints",
         video: "./assets/videos/LillysPreview.mp4",
         links: {
-            github: "https://github.com/wtvlucas/Lilys"
+            github: "https://github.com/wtvlucas/LilysThriftShop"
         }
     },
     '3d-room': {
