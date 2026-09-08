@@ -6,7 +6,7 @@
         youtubeId: "QQil3LRj7aY",
         playName: "disasterpiece.exe",
         links: {
-           website: "https://wtvlucas.github.io/disasterpiece/"
+           website: "https://disasterpiece.fun/"
         }
     },
     'kindergarten-hell': {
