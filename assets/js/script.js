@@ -3,7 +3,7 @@
         title: "Disasterpiece",
         description: "  Disasterpiece is hands down the biggest project I've grinded on so far. It's a chaotic 3D co-op stealth game where two clumsy thieves try to secure the bag without tripping over their own feet. It's still a WIP with a lot of features to ship, but I'm really hyped about the core loop we've built. \n  I wore a lot of hats for this one. I mained Concept Art and UI Programming, but I also handled a huge chunk of the general gameplay code. This allowed the Main Programmer to focus entirely on the heavy liftingspecifically the complex physics enginewhile I handled the rest of the game logic. \n  The real boss fight, though, was version control. Since we were both coding in parallel on different parts of the engine, we had to level up our Git skills fast. Dealing with branches and avoiding merge conflicts wasn't something we were used to, but we figured it out and optimized our workflow to keep the repo clean.",
         tech: "Unreal Engine, Blueprints, C++, Illustrator, Photoshop",
-        youtubeId: "FwKEWiaz4CU",
+        youtubeId: "QQil3LRj7aY",
         playName: "disasterpiece.exe",
         links: {
            website: "https://wtvlucas.github.io/disasterpiece/"
